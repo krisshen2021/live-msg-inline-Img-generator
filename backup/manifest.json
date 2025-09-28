@@ -1,0 +1,11 @@
+{
+    "display_name": "[Muffin] Live Inline Image Generator",
+    "author": "kris",
+    "version": "2.0.0",
+    "loading_order": 50,
+    "description": "Automatically generates images when character messages contain specific prompts. Features custom image containers with interactive controls (hide, fullscreen, regenerate) and persistent chat history support.",
+    "tags": ["chat", "images", "automation", "ui", "interactive"],
+    "js": "index.js",
+    "css": "style.css",
+    "persistent": true
+}

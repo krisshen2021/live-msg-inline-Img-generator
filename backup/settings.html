@@ -1,0 +1,51 @@
+<div class="live-msg-img-gen-settings">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header">
+            <b>
+                <span data-i18n="Live Inline Image Generator">[Muffin] Live Inline Image Generator</span>
+            </b>
+            <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+        </div>
+        <div class="inline-drawer-content">
+            <div class="fields-group">
+                <input id="live-img-enabled" type="checkbox" class="checkbox">
+                <label for="live-img-enabled" data-i18n="Enable Extension">Enable Extension</label>
+            </div>
+
+            <div class="fields-group">
+                <input id="live-img-use-custom-containers" type="checkbox" class="checkbox">
+                <label for="live-img-use-custom-containers" data-i18n="Use Custom Image Containers">Use Custom Image Containers</label>
+                <small class="image-gen-description" data-i18n="Enable enhanced image containers with interactive controls (hide, fullscreen, regenerate). Disable to use the legacy display method.">Enable enhanced image containers with interactive controls (hide, fullscreen, regenerate). Disable to use the legacy display method.</small>
+            </div>
+            <hr>
+            <label for="live-img-regex" data-i18n="Trigger Regex">Trigger Regex</label>
+            <textarea id="live-img-regex" class="text_pole" placeholder="<span\s+data-prompt=&quot;([^&quot;]+)&quot;[^>]*>.*?</span>"></textarea>
+            <small class="image-gen-description" data-i18n="The regular expression used to find and extract the image prompt from a message.">The regular expression used to find and extract the image prompt from a message.</small>
+
+            <div class="fields-group">
+                <label for="live-img-style" data-i18n="Image Generation Style">Image Generation Style</label>
+                <select id="live-img-style" class="text_pole">
+                    <option value="photo_realistic" data-i18n="Photo Realistic Style">Photo Realistic Style</option>
+                    <option value="hentai_manga" data-i18n="Hentai Manga Style">Hentai Manga Style</option>
+                </select>
+            </div>
+            <label for="live-img-negative-prompt" data-i18n="Negative Keywords">Negative Keywords</label>
+            <textarea id="live-img-negative-prompt" class="text_pole" placeholder="hentai, manga, anime, cartoon"></textarea>
+            <small class="image-gen-description" data-i18n="Comma-separated keywords to remove from the prompt, based on the selected style.">Comma-separated keywords to remove from the prompt, based on the selected style.</small>
+
+            <div class="fields-group">
+                <label for="live-img-aspect-ratio" data-i18n="Aspect Ratio">Aspect Ratio</label>
+                <select id="live-img-aspect-ratio" class="text_pole">
+                    <option value="1:1" data-i18n="Square (1:1)">Square (1:1)</option>
+                    <option value="4:3" data-i18n="Landscape (4:3)">Landscape (4:3)</option>
+                    <option value="3:4" data-i18n="Portrait (3:4)">Portrait (3:4)</option>
+                    <option value="16:9" data-i18n="Widescreen (16:9)">Widescreen (16:9)</option>
+                    <option value="9:16" data-i18n="Tall (9:16)">Tall (9:16)</option>
+                </select>
+                <label for="live-img-base-size" data-i18n="Base Size (px)">Base Size (px)</label>
+                <input id="live-img-base-size" type="number" class="text_pole" value="512" min="64" max="2048" step="64">
+                <small class="image-gen-description" data-i18n="The size of the shorter dimension. The other will be calculated based on the aspect ratio.">The size of the shorter dimension. The other will be calculated based on the aspect ratio.</small>
+            </div>
+        </div>
+    </div>
+</div>
